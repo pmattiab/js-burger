@@ -6,9 +6,107 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    background-color: #fff4e2;
+    height: 100vh;
+}
+
+.wrapper {
+    width: 900px;
+}
+
+header {
+    height: 160px;
+    background-color: #fdbb40;
+    padding: 80px 30px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+main {
+    height: calc(100vh - 300px);
+    background-color: white;
+    padding: 0 30px;
+    overflow: hidden;
+}
+
+main h2 {
+    font-size: 27px;
+    font-weight: 400;
+}
+
+.burger_name input {
+    font-size: 30px;
+    border: 0;
+}
+
+.ingredients_list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ingredients_list>div {
+    width: calc(50%);
 }
 
 .ingredients_list img {
     width: 50px;
     height: auto;
+}
+
+main .burger_name,
+main .coupon_area, 
+main .calculate_area {
+    margin: 40px 0;
+}
+
+main .ingredients_list,
+main .col_sx>div,
+main .col_dx>div {
+    margin: 20px 0;
+}
+
+main .col_sx img,
+main .col_dx img {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.coupon_area label {
+    font-size: 18px;
+}
+
+.coupon_area input {
+    width: 50%;
+    font-size: 18px;
+    padding: 5px 10px;
+    background-color: #fff4e2;
+    border: 0;
+    border-radius: 5px;
+}
+
+.calculate_area {
+    text-align: center;
+}
+
+.calculate_area button {
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #fdbb40;
+    border: 0;
+    border-radius: 10px;
+}
+
+footer {
+    height: 140px;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    background-color: #d23359;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

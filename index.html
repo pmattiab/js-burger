@@ -11,74 +11,88 @@
 </head>
 <body>
 
-    <header>
-        <h1>Create Your Burger</h1>
-    </header>
+    <div class="wrapper">
 
-    <main>
-        
-        <div>
-            <input type="text" placeholder="Name your burger">
-        </div>
+        <header>
+            <h1>Create Your Burger</h1>
+        </header>
 
-        <div class="ingredients_list">
-
-            <div>
-                <img src="img/cheese.svg" alt="cheese">
-                <label for="cheese_add">Cheese $ 1.00</label>
-                <input id="cheese_add" class="ingredient" type="checkbox" value="1">
+        <main>
+            
+            <div class="burger_name">
+                <input type="text" placeholder="Name your burger">
             </div>
 
-            <div>
-                <img src="img/fried-egg.svg" alt="egg">
-                <label for="egg_add">Egg $ 1.00</label>
-                <input id="egg_add" class="ingredient" type="checkbox" value="1">
+            <h2>Ingredients</h2>
+
+            <div class="ingredients_list">
+
+                <div class="col_sx">
+                    <div>
+                        <img src="img/cheese.svg" alt="cheese">
+                        <label for="cheese_add">Cheese $ 2.00</label>
+                        <input id="cheese_add" class="ingredient" type="checkbox" value="2">
+                    </div>
+    
+                    <div>
+                        <img src="img/fried-egg.svg" alt="egg">
+                        <label for="egg_add">Egg $ 3.00</label>
+                        <input id="egg_add" class="ingredient" type="checkbox" value="3">
+                    </div>
+    
+                    <div>
+                        <img src="img/mustard.svg" alt="mustard">
+                        <label for="mustard_add">Mustard $ 1.00</label>
+                        <input id="mustard_add" class="ingredient" type="checkbox" value="1">
+                    </div>
+                </div>
+
+                <div class="col_dx">
+                    <div>
+                        <img src="img/tomato.svg" alt="tomato">
+                        <label for="tomato_add">Tomato $ 2.00</label>
+                        <input id="tomato_add" class="ingredient" type="checkbox" value="2">
+                    </div>
+    
+                    <div>
+                        <img src="img/lettuce.svg" alt="lettuce">
+                        <label for="lettuce_add">Lettuce $ 1.00</label>
+                        <input id="lettuce_add" class="ingredient" type="checkbox" value="1">
+                    </div>
+    
+                    <div>
+                        <img src="img/ketchup.svg" alt="ketchup">
+                        <label for="ketchup_add">Ketchup $ 1.00</label>
+                        <input id="ketchup_add" class="ingredient" type="checkbox" value="1">
+                    </div>
+                </div>
+
             </div>
 
-            <div>
-                <img src="img/mustard.svg" alt="mustard">
-                <label for="mustard_add">Mustard $ 1.00</label>
-                <input id="mustard_add" class="ingredient" type="checkbox" value="1">
+            <div class="coupon_area">
+                <label for="coupon">Discount Coupon</label>
+                <input id="coupon" type="text" placeholder="12345ABCDEF">
             </div>
 
-            <div>
-                <img src="img/tomato.svg" alt="tomato">
-                <label for="tomato_add">Tomato $ 1.00</label>
-                <input id="tomato_add" class="ingredient" type="checkbox" value="1">
+            <div class="calculate_area">
+                <button id="calculate_btn">calculate</button>
             </div>
 
-            <div>
-                <img src="img/lettuce.svg" alt="lettuce">
-                <label for="lettuce_add">Lettuce $ 1.00</label>
-                <input id="lettuce_add" class="ingredient" type="checkbox" value="1">
+        </main>
+
+        <footer>
+
+            <div class="your_price">
+                <span>Your Price</span>
             </div>
 
-            <div>
-                <img src="img/ketchup.svg" alt="ketchup">
-                <label for="ketchup_add">Ketchup $ 1.00</label>
-                <input id="ketchup_add" class="ingredient" type="checkbox" value="1">
-            </div>   
+            <div class="price_total">
+                <span id="price">$ 10.00</span>
+            </div>
 
-        </div>
+        </footer>
 
-        <div>
-            <label for="coupon">Discount Coupon</label>
-            <input id="coupon" type="text" placeholder="12345ABCDEF">
-        </div>
-
-        <div>
-            <button id="calculate_btn">calculate</button>
-        </div>
-
-    </main>
-
-    <footer>
-
-        <span>Your Price</span>
-
-        <span id="price">$ 10.00</span>
-
-    </footer>
+    </div>
 
     <script type="text/javascript" src="js/script.js"></script>
 

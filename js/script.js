@@ -15,6 +15,12 @@ calculateButton.addEventListener("click", function() {
         }
     }
 
+    var couponCode = ["ABCDEFGH", "12345678", "ABCD1234"];
+
+    function findCoupon(coupon) {
+
+    }
+
     var finalePriceBurger = priceBurger.toFixed(2);
     document.getElementById("price").innerHTML = "$ " + finalePriceBurger;
 
