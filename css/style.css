@@ -17,11 +17,41 @@ body {
 header {
     height: 160px;
     background-color: #fdbb40;
-    padding: 80px 30px;
+    padding: 70px 30px 0;
 }
 
 h1 {
     font-size: 40px;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: super;
+}
+
+.title .title_img {
+    height: 60px;
+    display: inline-block;
+    position: relative;
+}
+
+.title img {
+    height: 100%;
+    width: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: burgermove 2s alternate ease-in-out infinite;
+}
+
+@keyframes burgermove {
+    0% {
+        top: 0;
+        left: 0;
+    }
+
+    50% {
+        top: 0;
+        left: 50px;
+    }
 }
 
 main {
@@ -33,7 +63,7 @@ main {
 
 main h2 {
     font-size: 27px;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .burger_name input {
@@ -43,7 +73,6 @@ main h2 {
 
 .ingredients_list {
     display: flex;
-    justify-content: space-between;
 }
 
 .ingredients_list>div {
@@ -114,4 +143,44 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+footer .your_price {
+    width: 65%;
+}
+
+footer #discount_apply {
+    font-size: 15px;
+    text-align: center;
+}
+
+footer .hidden {
+    opacity: 0;
+}
+
+footer .show {
+    opacity: 0;
+    animation: couponshow 2s;
+}
+
+@keyframes couponshow {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }

@@ -20,6 +20,8 @@ calculateButton.addEventListener("click", function() {
     for (var j = 0; j < couponCodes.length; j++) {
         thisCoupon = couponCodes[j];
         if (thisCoupon == couponInserted) {
+            var discountApply = document.getElementById("discount_apply");
+            discountApply.className = "show";
             priceBurger -= (priceBurger * 0.2)
         }
     }
