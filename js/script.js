@@ -10,15 +10,18 @@ calculateButton.addEventListener("click", function() {
         
         if(thisCheckbox.checked) {
             var thisIngredientPrice = parseInt(thisCheckbox.value);
-            
             priceBurger += thisIngredientPrice;
         }
     }
 
-    var couponCode = ["ABCDEFGH", "12345678", "ABCD1234"];
+    var couponInserted = document.getElementById("coupon").value;
+    var couponCodes = ["12345678", "1234ABCD", "ABCDEFGH"]
 
-    function findCoupon(coupon) {
-
+    for (var j = 0; j < couponCodes.length; j++) {
+        thisCoupon = couponCodes[j];
+        if (thisCoupon == couponInserted) {
+            priceBurger -= (priceBurger * 0.2)
+        }
     }
 
     var finalePriceBurger = priceBurger.toFixed(2);
