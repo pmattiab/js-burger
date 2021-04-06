@@ -11,14 +11,19 @@
 </head>
 <body>
 
+    <!-- INIZIO WRAPPER -->
     <div class="wrapper">
 
+        <!-- INIZIO HEADER -->
         <header>
 
+            <!-- sezione titolo -->
             <div class="title">
 
+                <!-- titolo -->
                 <h1>Create Your Burger</h1>
 
+                <!-- immagine burger titolo -->
                 <div class="title_img">
                     <img src="img/burger.png" alt="">
                 </div>
@@ -26,17 +31,23 @@
             </div>
 
         </header>
+        <!-- FINE HEADER -->
 
+        <!-- INIZIO MAIN -->
         <main>
             
+            <!-- nome burger utente -->
             <div class="burger_name">
-                <input type="text" placeholder="Name your burger">
+                <input type="text" placeholder="Name your burger" value="">
             </div>
 
+            <!-- titolo lista ingredienti -->
             <h2>Ingredients</h2>
 
+            <!-- inizio lista ingredienti -->
             <div class="ingredients_list">
 
+                <!-- inizio ingredienti colonna sinistra -->
                 <div class="col_sx">
                     <div>
                         <img src="img/cheese.svg" alt="cheese">
@@ -56,7 +67,9 @@
                         <input id="mustard_add" class="ingredient" type="checkbox" value="1">
                     </div>
                 </div>
+                <!-- fine ingredienti colonna sinistra -->
 
+                <!-- inizio ingredienti colonna destra -->
                 <div class="col_dx">
                     <div>
                         <img src="img/tomato.svg" alt="tomato">
@@ -76,38 +89,50 @@
                         <input id="ketchup_add" class="ingredient" type="checkbox" value="1">
                     </div>
                 </div>
+                <!-- fine ingredienti colonna destra -->
 
             </div>
+            <!-- fine lista ingredienti -->
 
+            <!-- area coupon utente -->
             <div class="coupon_area">
                 <label for="coupon">Discount Coupon</label>
                 <input id="coupon" type="text" placeholder="12345ABCDEF" value="">
             </div>
 
+            <!-- bottone per calcolare -->
             <div class="calculate_area">
                 <button id="calculate_btn">calculate</button>
             </div>
 
         </main>
+        <!-- FINE MAIN -->
 
+        <!-- INIZIO FOOTER -->
         <footer>
 
+            <!-- titolo prezzo -->
             <div class="your_price">
                 <span>Your Price</span>
             </div>
 
+            <!-- messaggio sconto, nascosta di default -->
             <div class="hidden" id="discount_apply">
                 <span>coupon applied<br>20% discount</span>
             </div>
 
+            <!-- prezzo totale -->
             <div class="price_total">
                 <span id="price">$ 10.00</span>
             </div>
 
         </footer>
+        <!-- FINE FOOTER -->
 
     </div>
+    <!-- FINE WRAPPER -->
 
+    <!-- javascript -->
     <script type="text/javascript" src="js/script.js"></script>
 
 </body>
